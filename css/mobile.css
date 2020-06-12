@@ -1,0 +1,64 @@
+/* Navbar */
+
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-nav img {
+    display: block;
+}
+
+#main-nav .social {
+    display: none;
+}
+
+#main-nav div ul li {
+    padding: 0.75rem 0;
+}
+
+
+/* Article */
+
+.card {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .double-sided,
+.card .reverse {
+    grid-template-columns: repeat(1, 1fr);
+    grid-column: 1;
+}
+
+
+/* Footer */
+
+#main-footer .grid {
+    display: block;
+}
+
+#main-footer .grid div {
+    padding: 0.5rem 0;
+}
+
+#main-footer .grid>*:first-child,
+#main-footer .grid>*:nth-child(2) {
+    border-bottom: #444444 1px dotted;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* About */
+
+.about-grid {
+    grid-template-columns: repeat(1, 1fr);
+}
